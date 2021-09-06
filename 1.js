@@ -1,4 +1,9 @@
-function countHandShake(num) {
-  return (num * (num - 1)) / 2;
+function countHandshake(n) {
+  let peluang = 0;
+  for (i = 0; i < n; i++) {
+    peluang += i;
+  }
+  console.log(peluang);
 }
-console.log(countHandShake(6));
+
+countHandshake(9);
